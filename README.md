@@ -128,7 +128,7 @@ chmod +x gradlew
 ./gradlew generateproto
 ./gradlew build
 cd ./build/libs
- java -jar NoSQLProject-0.0.1-SNAPSHOT.jar
+java -jar NoSQLProject-0.0.1-SNAPSHOT.jar
 ```
 <br>
 
@@ -176,7 +176,7 @@ curl -X GET http://localhost:8080/places
 - **Description**: 주소 데이터를 기반으로 장소 데이터를 거리순으로 정렬하여 반환
 - **Curl**
 ```Bash
- curl -X GET http://localhost:8080/place/nearby \
+curl -X GET http://localhost:8080/place/nearby \
 -H "Content-Type: application/json" \
 -d '{"address": "경기도 용인시 기흥구 마북동 19-1 단국대학교" }'
 ```
